@@ -25,7 +25,7 @@ const ImageZoom = () => {
           <h1 className="title">Calculadora RM</h1>
           <div className="description">
             <p>Con esta calculadora podrás hacer una estimación de tu RM (repetición maxima) en cualquier ejercicio.</p>
-            <button><NavLink to="/calculadoras/calculadoraKcal">Ir a la calculadora</NavLink> </button>
+            <button><NavLink to="/calculadoras/calculadoraRm">Ir a la calculadora</NavLink> </button>
           </div>
         </div>
       </div>
