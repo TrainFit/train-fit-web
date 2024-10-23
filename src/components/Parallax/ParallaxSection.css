@@ -1,0 +1,78 @@
+.parallax-container {
+    height: 80vh;
+    background-image: url('../../assets/images/fondo3.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 2em;
+  }
+  
+  .parallax-content {
+    background: rgba(0, 0, 0, 1);
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 500px;
+    margin: 1em;
+    text-align: left;
+
+    
+  }
+  
+  .parallax-content h1 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #ffffff;
+    margin: 10px ;
+   
+  }
+  .parallax-content h5 {
+    font-size: 1em;
+    margin-bottom: 15px;
+ 
+    margin-left: 15px;
+    padding: 10px 0 0 0 ;
+
+    
+  }
+  
+  .parallax-content p {
+    font-size: 0.8em;
+    margin: 10px ;
+  }
+  
+  @media (max-width: 768px) {
+    .parallax-content h1 {
+      font-size: 1.5em;
+    }
+  
+    .parallax-content p {
+      font-size: 0.9em;
+    }
+    .parallax-container {
+      height: 70vh;
+   
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .parallax-content h1 {
+      font-size: 1em;
+    }
+  
+    .parallax-content p {
+      font-size: 0.8em;
+    }
+    .parallax-container {
+      height: 60vh;
+   
+    }
+  }
+  

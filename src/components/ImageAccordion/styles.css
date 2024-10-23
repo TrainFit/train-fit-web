@@ -1,0 +1,147 @@
+ /* .image-accordion-background {
+   position: fixed;
+   inset: -20px;
+   z-index: 1;
+   background-size: cover;
+   background-position: center;
+   filter: blur(10px);
+   transition: 0.3s;
+ }
+
+ .image-accordion-background::after {
+   content: "";
+   position: absolute;
+   inset: 0;
+   background: rgb(0 0 0 / 88%);
+ } */
+
+ .image-accordion {
+   position: relative;
+   z-index: 2;
+   display: flex;
+   gap: 10px;
+   cursor: pointer;
+   font-size: small;
+   width: 100%;
+ }
+
+ .image-accordion-item {
+   position: relative;
+   overflow: hidden;
+   width: 195px;
+   height: 400px;
+   border-radius: 25px;
+   display: flex;
+   align-items: flex-end;
+   opacity: 0.8;
+   transition: 0.3s ;
+   background: rgb(255, 145, 0);
+   filter: blur(1px);
+   border: 2px solid rgb(255, 255, 255);
+   
+   
+   
+ }
+
+
+
+ .image-accordion :is(h2, p) {
+   margin: 0;
+ }
+
+ .image-accordion-item h2 {
+   font-size: 24px;
+   font-weight: 400;
+   color: rgb(255 255 255 / 100%);
+ }
+
+ .image-accordion-item p {
+   color: rgb(255 255 255 / 80%);
+ }
+
+ .image-accordion-item.active {
+   width: 250px;
+   filter: blur(0px);
+   opacity: 1;
+ }
+
+ .image-accordion-item .material-symbols-outlined {
+   display: grid;
+   place-items: center;
+   width: 500px;
+   height: 50px;
+   color: rgb(0 0 0 / 80%);
+   background: rgb(255 255 255 / 70%);
+   border-radius: 50%;
+   font-size: 28px;
+ }
+
+ .image-accordion-item .content {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 400px;
+   z-index: 1;
+   opacity: 0;
+   visibility: hidden;
+   padding: 100px 0 20px 20px;
+   display: flex;
+   align-items: center;
+   gap: 14px;
+   background: linear-gradient(to bottom, rgb(0 0 0 / 0%), rgb(0 0 0 / 80%));
+   transition: 0.25s;
+ }
+
+ .image-accordion-item.active .content {
+   opacity: 100%;
+   visibility: visible;
+
+ }
+
+
+ .image-accordion-item img {
+   position: absolute;
+   z-index: 0;
+   top: 50%;
+   left: 50%;
+   translate: -50% -50%;
+   height: 100%;
+
+
+
+ }
+
+
+ @media (max-width: 768px) {
+   .image-accordion-item {
+     width: 60px;
+
+   }
+
+   .image-accordion-item.active img {
+     width: 80%;
+
+   }
+   .image-accordion-item.active {
+    width:400px;
+ 
+    opacity: 1;
+  }
+ }
+
+ @media (max-width: 480px) {
+   .image-accordion-item {
+     width: 65px;
+
+   }
+
+   .image-accordion-item.active img {
+     width: 100%;
+
+   }
+   .image-accordion-item.active {
+    width:400px;
+ 
+    opacity: 1;
+  }
+ }

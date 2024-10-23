@@ -1,0 +1,101 @@
+.kcal-calculator-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border: #ffffff 1px solid;
+    border-radius: 10px;
+
+  
+  }
+  
+  .kcal-calculator {
+    text-align: center;
+  }
+  
+  .form-container {
+    margin-top: 20px;
+  }
+  
+  .kcal-calculator-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .flex-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .form-field {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .form-label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  .form-control, .form-select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+  }
+  
+  .radio-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 5px;
+  }
+  
+  .result {
+    margin-top: 20px;
+    text-align: center;
+    background-color: #fcfcfc13;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: #000  1px solid;
+    border-radius: 10px;
+    align-items: center;
+    
+  }
+  
+  .macros {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: #ffffff  1px solid;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .breadcrumb-error {
+    color: red;
+    margin-bottom: 10px;
+  }
+  
+  button.form-control {
+    background-color: #000000;
+    color: white;
+    border: 1px solid #fcfcfc;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button.form-control:hover {
+    background-color: #ffffff;
+  }
+  
