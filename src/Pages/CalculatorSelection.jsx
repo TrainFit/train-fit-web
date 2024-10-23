@@ -22,7 +22,7 @@ const CalculatorSelection = () => {
                 </div>
             </div> */}
             <div className="mt-5">
-                <h1 className="text-center  mt-5">Nuestras calculadoras</h1>
+                <h2 className="text-center  mt-5">Nuestras calculadoras</h2>
                 <p className="text-center">Elija una calculadora para comenzar</p>
 
             </div>

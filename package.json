@@ -1,16 +1,16 @@
 {
   "name": "tfweb",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
+  "homepage": "https://trainfit.net",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "npm run build && git add dist -f && git commit -m 'Deploy' && git push origin `git subtree split --prefix dist main`:refs/heads/main --force"
-  },
+    "deploy": "gh-pages -d dist"},
   "dependencies": {
     "aos": "^2.3.4",
     "bootstrap": "^5.3.3",

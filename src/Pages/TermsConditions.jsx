@@ -11,7 +11,7 @@ const TermsConditions = () => {
             
             <div className="row ">
                 <div className="col-12 p-3 m-3 ">
-                    <h2 className="mb-3">Términos y condiciones de TrainFit</h2>
+                    <h2 className="mb-3 mt-5">Términos y condiciones de TrainFit</h2>
                 </div>
 
                 <div className="col-lg-12 col-12 mt-3 mb-lg-5 d-flex justify-content-center ">

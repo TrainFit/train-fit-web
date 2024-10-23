@@ -10,6 +10,7 @@ export const Root = () => {
        <NavigationBar /> 
       {/* <HeroSection /> */}
       <br/>
+      
       <Outlet />
       <ScrollRestoration />
       <Footer />

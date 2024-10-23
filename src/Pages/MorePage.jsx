@@ -16,7 +16,7 @@ const MorePage = () => {
           className="action-button google-play"
         >
           <img src={google} alt="Google Play" className="store-logo" />
-          <span className="link-text">Descarga en Google Play</span>
+          <span className="link-text">Google Play</span>
         </a>
 
         <a
@@ -26,7 +26,7 @@ const MorePage = () => {
           className="action-button app-store"
         >
           <img src={apple} alt="App Store" className="store-logo" />
-          <span className="link-text">Descarga en App Store</span>
+          <span className="link-text">App Store</span>
         </a>
       </div>
 

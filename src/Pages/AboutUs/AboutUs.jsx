@@ -12,7 +12,7 @@ const AboutUs = () => {
   return (
     <div className="about-us-container">
       <div className="about-us-content">
-        <h1 data-aos="fade-up">Sobre nosotros</h1>
+        <h2 data-aos="fade-up ">Sobre nosotros</h2>
         <p data-aos="fade-up">
           Bienvenidos a <strong className="text-warning">Trainfit</strong>,
           <br />
