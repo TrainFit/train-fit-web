@@ -116,7 +116,7 @@ const Footer = () => {
               </li>
               <li className="nav-item mb-2">
                 <Link to="/politicas" className="nav-link p-0 link-warning text-light">
-                  Políticas
+                  Política y privacidad
                 </Link>
               </li>
               <li className="nav-item mb-2">
@@ -151,7 +151,7 @@ const Footer = () => {
                   onChange={handleChange}
                   required
                 />
-                <button className="btn btn-warning text-light" type="submit">
+                <button className="btn btn-warning text-light" type="submit" disabled>
                   Subscríbete
                 </button>
               </div>
