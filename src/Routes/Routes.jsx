@@ -61,10 +61,6 @@ const router = createHashRouter([
         element: <MorePage />,
       },
       {
-        path: "/app-ads.txt",
-        element: <AppAds />,
-      },
-      {
         path: "*",
         element: <NotFound />,
       }
