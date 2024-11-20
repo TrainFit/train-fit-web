@@ -4,7 +4,7 @@ import Dieta from "../../assets/images/MockUpDietaPrincipal.png";
 import Buscar from "../../assets/images/MockUpBuscarCrear.png";
 import Perfil from "../../assets/images/MockUpPerfil.png";
 import Ejercicio from "../../assets/images/MockUpEjercicio.png";
-import Serie from "../../assets/images/MockUpSerie.png";
+/* import Serie from "../../assets/images/MockUpSerie.png"; */
 
 const images = [
 
@@ -12,7 +12,7 @@ const images = [
   Dieta,
   Buscar,
   Perfil,
-  Serie,
+/*   Serie, */
   Ejercicio,
 ]
 

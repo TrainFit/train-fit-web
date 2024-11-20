@@ -5,7 +5,7 @@ import image1 from "../../assets/images/MockUpBuscarAlimento.png";
 import image2 from "../../assets/images/MockUpBuscarCrear.png";
 import image3 from "../../assets/images/MockUpMeso.png";
 import image4 from "../../assets/images/MockUpPerfil.png";
-import image5 from "../../assets/images/MockUpSerie.png";
+import image5 from "../../assets/images/MockUpEjercicio.png";
 
 const items = [
   {

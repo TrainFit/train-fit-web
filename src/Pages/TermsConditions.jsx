@@ -16,7 +16,7 @@ const TermsConditions = () => {
 
                 <div className="col-lg-12 col-12 mt-3 mb-lg-5 d-flex justify-content-center ">
                     <article className="me-4 p-3">
-                        <h6 className="m-2">1. Introducción Bienvenido TrainFit.</h6 >
+                        <h6 className="m-2">1. Introducción Bienvenido a TrainFit.</h6 >
 
                         <p className="m-2 fs-6">Estos Términos y Condiciones
                             regulan el uso de nuestra Aplicación. Al acceder o usar nuestra Aplicación, usted acepta

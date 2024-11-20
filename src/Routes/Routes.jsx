@@ -13,6 +13,7 @@ import AboutUs from '../Pages/AboutUs/AboutUs';
 import FaqsPage from '../Pages/FaqsPage';
 import NotFound from '../Pages/NotFound';
 import MorePage from '../Pages/MorePage';
+/* import AppAds from '../../app-ads.txt'; */
 
 const router = createHashRouter([
   {
@@ -58,6 +59,10 @@ const router = createHashRouter([
       {
         path: "/Mas",
         element: <MorePage />,
+      },
+      {
+        path: "/app-ads.txt",
+        element: <AppAds />,
       },
       {
         path: "*",
