@@ -16,8 +16,8 @@ const AppPromotion = () => {
 
             </div>
             <div className="app-promotion__image d-flex justify-content-center align-items-center gap-2">
-                <img src={apple} onClick={() => window.open('https://testflight.apple.com/join/6WnM77NZ')} alt="App Store" className="app-promotion__store-logo" />
-                <img src={google} onClick={() => window.open('https://play.google.com/store/apps/details?id=com.trainfit.trainfit&fbclid=PAZXh0bgNhZW0CMTEAAabKa5R3sc2ZUqxy39Tgqw7qOQdB96SJHETbJHpCCo4ClfmWy_-lkuwRc_o_aem_zkL4C3LBk-lq6Q_S4KWVQw')} alt="Google Play Store" className="app-promotion__store-logo" />
+                <img src={apple} onClick={() => window.open('https://apps.apple.com/es/app/trainfit/id6471257280')} alt="App Store" className="app-promotion__store-logo" />
+                <img src={google} onClick={() => window.open('https://play.google.com/store/apps/details?id=com.trainfit.trainfit')} alt="Google Play Store" className="app-promotion__store-logo" />
             </div>
         </section>
     );

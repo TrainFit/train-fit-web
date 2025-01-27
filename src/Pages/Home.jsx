@@ -13,6 +13,7 @@ import ImageZoom from '../components/ImageZoom/ImageZoom';
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 import { useEffect } from 'react';
+import ReviewsProps from '../components/ReviewComponent/ReviewsProps';
 export const Home = () => {
   useEffect(() => {
     AOS.init({
@@ -60,19 +61,11 @@ export const Home = () => {
                 Algunas de las características principales de la app son:
               </h6>
             </div>
-
-
             <Accordion />
           </Col>
         </Row>
 
-        <Row >
-          <Col>
-
-          </Col>
-        </Row>
       </Container>
-
       <ParallaxSection />
       <Container>
         <Row>
@@ -90,15 +83,20 @@ export const Home = () => {
             </div>
           </Col>
         </Row>
-
         <div className="app" data-aos="fade-up" id='descarga'>
           <AppPromotion />
         </div>
+        <Row>
+          <Col>
+            <ReviewsProps />
+          </Col>
+        </Row>
+
         <div id='calculadoras' className="text-center mb-5" data-aos="fade-up">
           <h1>Calculadoras</h1>
           <h5>También puedes hacer uso de nuestras calculadoras para medir tus calorías y tu repetición máxima</h5>
         </div>
-        
+
       </Container>
       <ImageZoom className="border" />
     </>

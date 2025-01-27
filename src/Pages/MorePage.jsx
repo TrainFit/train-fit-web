@@ -10,7 +10,7 @@ const MorePage = () => {
       {/* Links para descargar la app */}
       <div className="download-buttons">
         <a
-          href="https://play.google.com/store/apps/details?id=com.trainfit.trainfit&fbclid=PAZXh0bgNhZW0CMTEAAabKa5R3sc2ZUqxy39Tgqw7qOQdB96SJHETbJHpCCo4ClfmWy_-lkuwRc_o_aem_zkL4C3LBk-lq6Q_S4KWVQw"
+          href="https://play.google.com/store/apps/details?id=com.trainfit.trainfit"
           target="_blank"
           rel="noopener noreferrer"
           className="action-button google-play"
@@ -20,7 +20,7 @@ const MorePage = () => {
         </a>
 
         <a
-          href="https://testflight.apple.com/join/6WnM77NZ"
+          href="https://apps.apple.com/es/app/trainfit/id6471257280"
           target="_blank"
           rel="noopener noreferrer"
           className="action-button app-store"

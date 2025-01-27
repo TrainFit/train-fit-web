@@ -3,6 +3,10 @@
     flex-wrap: wrap;
     justify-content: space-around;
     margin-bottom: 2em;
+
+  }
+  .feature:hover {
+    transform: scale(1.05);
   }
   
   .feature {
@@ -13,8 +17,8 @@
     max-width: 500px;
     margin: 1em;
     text-align: center ;
-    
     border-radius: 15px;
+    transition: transform 0.3s ease;
   }
   
   .feature h3 {
