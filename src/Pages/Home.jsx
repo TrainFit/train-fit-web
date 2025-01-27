@@ -86,11 +86,11 @@ export const Home = () => {
         <div className="app" data-aos="fade-up" id='descarga'>
           <AppPromotion />
         </div>
-        <Row>
+ {/*        <Row>
           <Col>
             <ReviewsProps />
           </Col>
-        </Row>
+        </Row> */}
 
         <div id='calculadoras' className="text-center mb-5" data-aos="fade-up">
           <h1>Calculadoras</h1>
