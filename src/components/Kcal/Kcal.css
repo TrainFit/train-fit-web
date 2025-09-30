@@ -2,10 +2,9 @@
     max-width: 800px;
     margin: auto;
     padding: 20px;
-    border: #ffffff 1px solid;
+    background-color: #141414;
+    border: #252525 1px solid;
     border-radius: 10px;
-
-  
   }
   
   .kcal-calculator {
@@ -49,36 +48,147 @@
   
   .radio-group {
     display: flex;
-    gap: 15px;
+    gap: 10px;
     margin-top: 5px;
+    justify-content: flex-start;
+  }
+  
+  .radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    font-weight: normal;
+    cursor: pointer;
+    padding: 8px 12px;
+    border: 1px solid #444;
+    border-radius: 6px;
+    background-color: #1a1a1a;
+    color: #fff;
+    transition: all 0.2s ease;
+    min-width: auto;
+  }
+  
+  .radio-group label:hover {
+    border-color: #666;
+    background-color: #222;
+  }
+  
+  .radio-group label input[type="radio"] {
+    margin: 0;
+    width: 16px;
+    height: 16px;
+  }
+  
+  .radio-group label input[type="radio"]:checked + span,
+  .radio-group label:has(input[type="radio"]:checked) {
+    border-color: #007bff;
+    background-color: #0056b3;
   }
   
   .result {
-    margin-top: 20px;
+    margin-top: 32px;
     text-align: center;
-    background-color: #fcfcfc13;
-    padding: 20px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    border: #000  1px solid;
-    border-radius: 10px;
-    align-items: center;
-    
+    background: linear-gradient(135deg, #1a1a1a 0%, #1e1e1e 100%);
+    padding: 32px 24px;
+    border-radius: 12px;
+    border: 1px solid #333;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .result::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #007bff, #0056b3, #007bff);
+    background-size: 200% 100%;
+    animation: shimmer 2s ease-in-out infinite;
+  }
+  
+  @keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+  
+  .result h3 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #999;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  .result h1 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 8px 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    line-height: 1.1;
   }
   
   .macros {
-    margin-top: 20px;
+    margin-top: 28px;
+    padding: 24px;
+    background: linear-gradient(135deg, #222 0%, #252525 100%);
+    border: 1px solid #333;
+    border-radius: 12px;
+   
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .macros h4:first-child {
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 12px;
+  }
+  
+  .macros h4:first-child::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 2px;
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    border-radius: 1px;
+  }
+  
+  .macros h4:not(:first-child) {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 12px 0;
+    padding: 12px 16px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.2s ease;
     display: flex;
-    gap: 10px;
-    max-width: 300px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    border: #ffffff  1px solid;
-    border-radius: 10px;
-    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .macros h4:not(:first-child):hover {
+    background-color: rgba(255, 255, 255, 0.04);
+    border-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-1px);
+  }
+  
+  .macros h4:last-child {
+    margin-bottom: 0;
   }
   
   .breadcrumb-error {
@@ -87,15 +197,95 @@
   }
   
   button.form-control {
-    background-color: #000000;
+    background-color: #1a1a1a;
     color: white;
-    border: 1px solid #fcfcfc;
-    padding: 10px;
+    border: 1px solid #444;
+    padding: 12px;
     cursor: pointer;
     font-size: 16px;
+    font-weight: 500;
+    border-radius: 6px;
+    transition: all 0.2s ease;
   }
   
   button.form-control:hover {
-    background-color: #ffffff;
+    background-color: #333;
+    border-color: #666;
+  }
+  
+  /* Responsive design for mobile devices */
+  @media (max-width: 768px) {
+    .kcal-calculator-container {
+      padding: 16px;
+      margin: 10px;
+    }
+    
+    .radio-group {
+      gap: 8px;
+    }
+    
+    .radio-group label {
+      padding: 6px 10px;
+      font-size: 13px;
+    }
+    
+    .result {
+      padding: 24px 16px;
+      margin-top: 28px;
+    }
+    
+    .result h3 {
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+    
+    .result h1 {
+      font-size: 36px;
+    }
+    
+    .macros {
+      padding: 20px 16px;
+      max-width: 100%;
+      margin-top: 24px;
+    }
+    
+    .macros h4:first-child {
+      font-size: 16px;
+      margin-bottom: 16px;
+    }
+    
+    .macros h4:not(:first-child) {
+      font-size: 14px;
+      padding: 10px 12px;
+      margin: 10px 0;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .radio-group label {
+      padding: 5px 8px;
+      font-size: 12px;
+    }
+    
+    .result {
+      padding: 20px 12px;
+    }
+    
+    .result h1 {
+      font-size: 32px;
+    }
+    
+    .macros {
+      padding: 16px 12px;
+    }
+    
+    .macros h4:first-child {
+      font-size: 15px;
+    }
+    
+    .macros h4:not(:first-child) {
+      font-size: 13px;
+      padding: 8px 10px;
+    }
   }
   

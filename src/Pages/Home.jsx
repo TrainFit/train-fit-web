@@ -56,10 +56,9 @@ export const Home = () => {
 
 
             <div className="text-center mt-4 mb-4" data-aos="fade-up">
-              <h6 className="">
-
+              <p className="">
                 Algunas de las características principales de la app son:
-              </h6>
+              </p>
             </div>
             <Accordion />
           </Col>
@@ -86,15 +85,15 @@ export const Home = () => {
         <div className="app" data-aos="fade-up" id='descarga'>
           <AppPromotion />
         </div>
- {/*        <Row>
+         <Row>
           <Col>
             <ReviewsProps />
           </Col>
-        </Row> */}
+        </Row> 
 
         <div id='calculadoras' className="text-center mb-5" data-aos="fade-up">
-          <h1>Calculadoras</h1>
-          <h5>También puedes hacer uso de nuestras calculadoras para medir tus calorías y tu repetición máxima</h5>
+          <h2>Calculadoras</h2>
+          <p>También puedes hacer uso de nuestras calculadoras para medir tus calorías y tu repetición máxima</p>
         </div>
 
       </Container>

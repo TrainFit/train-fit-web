@@ -11,27 +11,27 @@ const TermsConditions = () => {
             
             <div className="row ">
                 <div className="col-12 p-3 m-3 ">
-                    <h2 className="mb-3 mt-5">Términos y condiciones de TrainFit</h2>
+                    <h1 className="mb-3 mt-5">Términos y condiciones de TrainFit</h1>
                 </div>
 
                 <div className="col-lg-12 col-12 mt-3 mb-lg-5 d-flex justify-content-center ">
                     <article className="me-4 p-3">
-                        <h6 className="m-2">1. Introducción Bienvenido a TrainFit.</h6 >
+                        <h2 className="m-2">1. Introducción Bienvenido a TrainFit.</h2 >
 
                         <p className="m-2 fs-6">Estos Términos y Condiciones
                             regulan el uso de nuestra Aplicación. Al acceder o usar nuestra Aplicación, usted acepta
                             estar sujeto a estos Términos y Condiciones. Si tiene alguna pregunta, puede
                             contactarnos en trainfitapp@gmail.com.</p>
 
-                        <h6 className="m-2">2. Aceptación de los términos </h6>
+                        <h2 className="m-2">2. Aceptación de los términos </h2>
                         
 
                         <p className="m-2 fs-6" >Al utilizar la Aplicación,
                             usted acepta estos Términos y Condiciones en su totalidad. Si no está de acuerdo con
                             alguna parte de los términos, no debe usar la Aplicación.</p>
 
-                        <h6 className="m-2">3. Modificaciones de los términos
-                        </h6 >
+                        <h2 className="m-2">3. Modificaciones de los términos
+                        </h2 >
 
 
 
@@ -41,8 +41,8 @@ const TermsConditions = () => {
                             la Aplicación después de la publicación de cambios implica la aceptación de los mismos
                         </p>
 
-                        <h6 className="m-2">4. Descripción del servicio
-                            el usuario</h6 >
+                        <h2 className="m-2">4. Descripción del servicio
+                            el usuario</h2 >
 
 
                         <p className="m-2 fs-6" >Trainfit es una aplicación
@@ -86,7 +86,7 @@ const TermsConditions = () => {
 
 
 
-                        <h6 className="m-2">5. Registro y cuentas de usuario</h6>
+                        <h2 className="m-2">5. Registro y cuentas de usuario</h2>
                         
                         <p className="m-2 fs-6" >Para utilizar ciertas funciones
                             de la Aplicación, es posible que deba registrarse y crear una cuenta. Debe proporcionar
@@ -97,7 +97,7 @@ const TermsConditions = () => {
 
 
 
-                        <h6 className="m-2">6. Uso aceptable</h6>
+                        <h2 className="m-2">6. Uso aceptable</h2>
 
 
                         <p className="m-2 fs-6" >Usted se compromete a utilizar
@@ -105,7 +105,7 @@ const TermsConditions = () => {
                             la Aplicación para actividades ilegales, comerciales no autorizadas o comportamientos
                             que puedan dañar a otros usuarios o a la Aplicación.
                         </p>
-                        <h6 className="m-2">7. Política de privacidad </h6>
+                        <h2 className="m-2">7. Política de privacidad </h2>
 
                         <p className="m-2 fs-6" >Nuestra Política de Privacidad,
                             disponible <Link to="/politicas" className=" text-warning">AQUÍ</Link>,
@@ -124,7 +124,7 @@ const TermsConditions = () => {
 
 
 
-                        <h6 className="m-2">8. Propiedad intelectual</h6>
+                        <h2 className="m-2">8. Propiedad intelectual</h2>
 
                         <p className="m-2 fs-6" >Todos los derechos sobre las
                             Plataformas, incluidas sus diversas funcionalidades, en su totalidad y en partes, en

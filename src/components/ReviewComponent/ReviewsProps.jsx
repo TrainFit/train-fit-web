@@ -4,38 +4,32 @@ import Reviews from "./Reviews";
 const ReviewsProps = () => {
   const reviewsData = [
     {
-      userAvatar: "https://randomuser.me/api/portraits/men/32.jpg",
-      userName: "Santiago González",
+      userName: "Santiago",
       rating: 5,
       text: "La mejor app que he usado para entrenar y llevar mi dieta.",
     },
     {
-      userAvatar: "https://randomuser.me/api/portraits/women/44.jpg",
-      userName: "David Argente",
+      userName: "David",
       rating: 5,
       text: "Increíble aplicación, me ayuda a mantener un seguimiento perfecto de mis entrenamientos.",
     },
     {
-      userAvatar: "https://randomuser.me/api/portraits/men/75.jpg",
-      userName: "Roberto Reyes",
+      userName: "Roberto",
       rating: 5,
       text: "¡Espectacular! Las funciones de entrenamiento son súper completas y fáciles de usar.",
     },
     {
-      userAvatar: "https://randomuser.me/api/portraits/women/12.jpg",
-      userName: "Mónica Pavón",
+      userName: "Mónica",
       rating: 4.5,
       text: "Me encanta cómo puedo personalizar mis rutinas y ver mi progreso semanal.",
     },
     {
-      userAvatar: "https://randomuser.me/api/portraits/men/58.jpg",
-      userName: "Ana Guerra",
+      userName: "Ana",
       rating: 4.5,
       text: "La mejor app fitness que he probado. Todo está en un solo lugar y funciona de maravilla.",
     },
     {
-      userAvatar: "https://randomuser.me/api/portraits/women/29.jpg",
-      userName: "Luis Miguel",
+      userName: "Luis",
       rating: 5,
       text: "Nunca había sido tan fácil organizar mis comidas y rutinas de entrenamiento. ¡Un 10/10!",
     },

@@ -6,13 +6,13 @@ const Politics = () => {
     <Container>
         <div className="row mt-5">
                     <div className="col-12 p-3 m-3 ">
-                        <h2 className="mb-3" >Política y privacidad de TrainFit</h2>
+                        <h1 className="mb-3" >Política y privacidad de TrainFit</h1>
                     </div>
 
                     <div className="col-lg-12 col-12 mt-3 mb-lg-5 d-flex justify-content-center ">
                         <article className="me-4 p-3"  data-aos-delay="300">
-                            <h5 className="m-2"  data-aos-delay="300">Acerca de TrainFit y esta Política
-                            </h5>
+                            <h2 className="m-2"  data-aos-delay="300">Acerca de TrainFit y esta Política
+                            </h2>
 
                             <p   data-aos-delay="300" className= "m-2 fs-6">Esta Política de privacidad explica
                                 cuándo
@@ -21,7 +21,7 @@ const Politics = () => {
                                 cómo la utilizamos, con quién la compartimos, dónde se procesa, cómo la gestionamos y
                                 las opciones y los derechos legales del usuario asociados a esta información.</p>
 
-                            <h5 className="m-2"  data-aos-delay="300">Alcance de esta Política</h5>
+                            <h2 className="m-2"  data-aos-delay="300">Alcance de esta Política</h2>
                                
 
                             <p className="m-2 fs-6"  data-aos-delay=" 300"> TrainFit y sus empresas filiales
@@ -129,7 +129,7 @@ const Politics = () => {
                                 respaldan dependen del tipo de relación que tengamos con el usuario y de cómo
                                 interactuemos
                                 con él.</p>
-                            <h6 className="m-2"  data-aos-delay="300">Entre estos fines, se incluyen:</h6>
+                            <h3 className="m-2"  data-aos-delay="300">Entre estos fines, se incluyen:</h3>
                             <ul  data-aos-delay="300">
 
                                 <li  data-aos-delay="300">

@@ -14,7 +14,7 @@ function HeroSection() {
       <main className="main body-header">
         <section className="section banner banner-section">
           <div className="container banner-column ">
-            <img className="banner-image w-100" src={Logo} alt="banner" />
+            <img className="banner-image w-100" src={Logo} alt="TrainFit - Logo de la aplicación de entrenamiento y nutrición" />
             <div className="banner-inner">
               <h1 className="heading-xl">¡Llegó la hora de tu mejor versión!</h1>
               <p className="paragraph">

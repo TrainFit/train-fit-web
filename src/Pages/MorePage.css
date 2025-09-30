@@ -1,0 +1,437 @@
+/* MorePage.css */
+
+.more-page {
+  padding: 60px 0;
+  background-color: var(--color-black-500);
+  min-height: 100vh;
+  color: var(--color-white-100);
+}
+
+/* Hero Section */
+.hero-section {
+  margin-bottom: 3rem;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  
+  background: white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: var(--color-white-400);
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Section Headers */
+.section-header {
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--color-white-100);
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: var(--color-white-400);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Download Cards */
+.download-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  height: 100%;
+  overflow: hidden;
+}
+
+.download-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-large);
+  border-color: rgba(var(--color-blue-500), 0.3);
+}
+
+.download-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.download-card:hover .download-icon {
+  background: rgba(var(--color-blue-500), 0.2);
+  transform: scale(1.1);
+}
+
+.store-icon {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.download-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-white-100);
+  margin-bottom: 0.5rem;
+}
+
+.download-description {
+  color: var(--color-white-400);
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.download-btn {
+  background: linear-gradient(135deg, var(--color-blue-500) 0%, var(--color-blue-700) 100%);
+  border: none;
+  color: var(--color-black-500);
+  font-weight: 600;
+  padding: 12px 30px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.download-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-medium);
+  color: var(--color-black-500);
+}
+
+/* Social Cards */
+.social-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  height: 100%;
+  overflow: hidden;
+}
+
+.social-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-medium);
+}
+
+.social-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.instagram-btn .social-icon {
+  background: linear-gradient(135deg, #e1306c 0%, #fd1d1d 50%, #f77737 100%);
+}
+
+.tiktok-btn .social-icon {
+  background: linear-gradient(135deg, #000000 0%, #ff0050 100%);
+}
+
+.facebook-btn .social-icon {
+  background: linear-gradient(135deg, #1877f2 0%, #42a5f5 100%);
+}
+
+.youtube-btn .social-icon {
+  background: linear-gradient(135deg, #ff0000 0%, #ff4444 100%);
+}
+
+.social-card:hover .social-icon {
+  transform: scale(1.1);
+}
+
+.social-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--color-white-100);
+  margin-bottom: 0.5rem;
+}
+
+.social-description {
+  color: var(--color-white-400);
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.social-btn {
+  background: rgba(var(--color-white-100), 0.1);
+  border: 1px solid rgba(var(--color-white-100), 0.2);
+  color: var(--color-white-100);
+  font-weight: 500;
+  padding: 8px 25px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.9rem;
+}
+
+.social-btn:hover {
+  background: rgba(var(--color-white-100), 0.2);
+  color: var(--color-white-100);
+  transform: translateY(-2px);
+}
+
+/* Call to Action Section */
+.cta-section {
+  background: linear-gradient(135deg, rgba(var(--color-blue-500), 0.1) 0%, rgba(var(--color-blue-700), 0.1) 100%);
+  padding: 4rem 2rem;
+  border-radius: 25px;
+  border: 1px solid rgba(var(--color-blue-500), 0.2);
+  margin-top: 4rem;
+}
+
+.cta-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--color-white-100);
+  margin-bottom: 1rem;
+}
+
+.cta-subtitle {
+  font-size: 1.1rem;
+  color: var(--color-white-400);
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* CTA Buttons Container */
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+/* Base CTA Button Styles */
+.cta-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
+  min-width: 200px;
+  height: 56px;
+  border-radius: 28px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  overflow: hidden;
+  border: 2px solid transparent;
+  box-sizing: border-box;
+}
+
+.cta-button-text {
+  position: relative;
+  z-index: 2;
+  transition: color 0.3s ease;
+}
+
+/* Primary Button (Descargar App) */
+.cta-button-primary {
+  background: linear-gradient(135deg, var(--color-blue-500) 0%, var(--color-blue-700) 100%);
+  color: var(--color-white-100);
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+}
+
+.cta-button-primary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, var(--color-blue-700) 0%, var(--color-blue-500) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.cta-button-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-large);
+}
+
+.cta-button-primary:hover::before {
+  opacity: 1;
+}
+
+.cta-button-primary:hover .cta-button-text {
+  color: var(--color-white-100);
+}
+
+.cta-button-primary:active {
+  transform: translateY(0);
+}
+
+/* Secondary Button (Usar Calculadoras) */
+.cta-button-secondary {
+  background: transparent;
+  color: var(--color-blue-500);
+  border: 2px solid var(--color-blue-500);
+  position: relative;
+}
+
+.cta-button-secondary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--color-blue-500);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1;
+}
+
+.cta-button-secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-medium);
+  border-color: var(--color-blue-500);
+}
+
+.cta-button-secondary:hover::before {
+  transform: scaleX(1);
+}
+
+.cta-button-secondary:hover .cta-button-text {
+  color: var(--color-white-100);
+}
+
+.cta-button-secondary:active {
+  transform: translateY(0);
+}
+
+/* Focus States for Accessibility */
+.cta-button:focus {
+  outline: 3px solid var(--color-blue-500);
+  outline-offset: 2px;
+}
+
+.cta-button:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .more-page {
+    padding: 40px 0;
+  }
+  
+  .hero-title {
+    font-size: 2.2rem;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .cta-title {
+    font-size: 1.8rem;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cta-btn {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .download-card,
+  .social-card {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-title {
+    font-size: 1.8rem;
+  }
+  
+  .section-title {
+    font-size: 1.6rem;
+  }
+  
+  .hero-subtitle,
+  .section-subtitle {
+    font-size: 1rem;
+  }
+  
+  .cta-section {
+    padding: 2.5rem 1.5rem;
+  }
+}
+
+/* Animation Enhancements */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.download-card,
+.social-card {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Hover Effects for Better UX */
+.download-card,
+.social-card {
+  cursor: pointer;
+}
+
+.download-card:hover .download-title,
+.social-card:hover .social-title {
+  color: var(--color-blue-500);
+}
+
+/* Focus States for Accessibility */
+.download-btn:focus,
+.social-btn:focus,
+.cta-btn:focus {
+  outline: 2px solid var(--color-blue-500);
+  outline-offset: 2px;
+}

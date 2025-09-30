@@ -78,7 +78,7 @@ const ContactForm = () => {
     <div className="contact-form-container mt-5">
       {/* <h2>Contacto</h2> */}
       {/* <p>¿Tienes alguna pregunta o comentario? Nos encantaría saber de ti. Por favor, completa el formulario a continuación y nos pondremos en contacto contigo lo antes posible.</p> */}
-      <h2 data-aos="fade-up">Contáctanos</h2>
+      <h1 data-aos="fade-up">Contáctanos</h1>
         <p data-aos="fade-up">
           Si tienes alguna pregunta, sugerencia o simplemente quieres decir hola, no dudes en ponerte en contacto con nosotros en <a className="text-light" id="style-1" href="mailto:trainfit.suggestions@gmail.com">trainfit.suggestions@gmail.com</a> o síguenos en nuestras redes sociales en:
         </p>

@@ -13,16 +13,16 @@ const CalculatorSelection = () => {
                 <div className="app-promotion__image d-flex justify-content-center align-items-center gap-5">
                     <div className="">
                         <h2 className="">Calculadora de Kcal</h2>
-                        <img src={Kcal} onClick={() => window.open('/CalculadoraKcal')} alt="Kcal" className=" app-promotion__store-logo" />
+                        <img src={Kcal} onClick={() => window.open('/CalculadoraKcal')} alt="Calculadora de calorías diarias - Calcula tu gasto energético" className=" app-promotion__store-logo" />
                     </div>
                     <div className="">
                         <h2>Calculadora de Rm</h2>
-                        <img src={RM} onClick={() => window.open('/CalculadoraRm')} alt="RM" className="app-promotion__store-logo" />
+                        <img src={RM} onClick={() => window.open('/CalculadoraRm')} alt="Calculadora de 1RM - Calcula tu repetición máxima en ejercicios" className="app-promotion__store-logo" />
                     </div>
                 </div>
             </div> */}
             <div className="mt-5">
-                <h2 className="text-center  mt-5">Nuestras calculadoras</h2>
+                <h1 className="text-center  mt-5">Nuestras calculadoras</h1>
                 <p className="text-center">Elija una calculadora para comenzar</p>
 
             </div>

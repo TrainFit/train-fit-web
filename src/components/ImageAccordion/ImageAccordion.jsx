@@ -11,21 +11,25 @@ const items = [
     header: "Rutina",
     image: image2,
     text: `Crear o buscar rutinas`,
+    alt: "TrainFit - Pantalla de creación y búsqueda de rutinas de entrenamiento"
   },
   {
     header: "Alimentos",
     image: image1,
     text: `Miles de alimentos `,
+    alt: "TrainFit - Pantalla de búsqueda de alimentos y base de datos nutricional"
   },
   {
     header: "Control",
     image: image4,
     text: `Control de variables`,
+    alt: "TrainFit - Pantalla de control de variables y estadísticas de progreso"
   },
   {
     header: "Series",
     image: image5,
     text: `Configuración de series`,
+    alt: "TrainFit - Pantalla de configuración de series y ejercicios"
   },
 ];
 
@@ -56,7 +60,7 @@ export const ImageAccordion = () => {
             className={`image-accordion-item ${isActive}`}
             onClick={() => handleToggle(index)}
           >
-            <img src={item.image} alt={item.header} />
+            <img src={item.image} alt={item.alt} />
             <div className="content">
               <div>
                 <h2>{item.header}</h2>

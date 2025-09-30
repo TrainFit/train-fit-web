@@ -39,8 +39,8 @@ export const RmCalculator = () => {
       </Row>
 
       <div className="additional-calculator" >
-          <h5 data-aos="fade-up">También puedes utilizar nuestra</h5>
-          <h1 data-aos="fade-up"><Link to="/calculadoras/CalculadoraKcal" id="style-1">Calculadora de Kcal</Link> </h1>
+          <p data-aos="fade-up">También puedes utilizar nuestra</p>
+          <h2 data-aos="fade-up"><Link to="/calculadoras/CalculadoraKcal" id="style-1">Calculadora de Kcal</Link> </h2>
         </div>
 
 

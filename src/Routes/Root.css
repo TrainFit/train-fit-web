@@ -1,0 +1,17 @@
+/* Layout para mantener el footer siempre en la parte inferior */
+.root-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Asegurar que el contenido principal ocupe el espacio disponible */
+.main-content > * {
+  flex-grow: 1;
+}

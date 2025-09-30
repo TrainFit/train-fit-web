@@ -1,34 +1,35 @@
 .additional-calculator {
-    text-align: center;
-    margin-top: 20px;
-    padding: 50px;
+  text-align: center;
+  margin-top: 20px;
+  padding: 50px;
 
-    border-radius: 3px;
-   
-    border-top: #ffa200 2px solid;
+  border-radius: 3px;
+
+  border-top: #ffa200 2px solid;
 }
 
 .additional-calculator a {
-    color: #ffa200;
-    text-decoration: none;
- transition: all 0.3s ease;
-  
+  color: #ffa200;
+  text-decoration: none;
+  transition: all 0.3s ease;
+
 
 
 }
 
 .additional-calculator a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 
 
 }
+
 .more-page-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 20px;
-  max-width: 300px;
+  max-width: 400px;
   margin: 0 auto;
   text-align: center;
 }
@@ -48,9 +49,10 @@
   width: 100%;
   max-width: 400px;
   background-color: #171717;
-  box-shadow: #ff7b0066 0px 4px 8px;
+  box-shadow: #ffffff66 0px 1px 2px;
   padding: 15px;
   border-radius: 8px;
+
 }
 
 .action-button {
@@ -64,6 +66,7 @@
   color: white;
   transition: background-color 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
 
 
 }
@@ -75,15 +78,22 @@
 
 /* Colores específicos para cada botón */
 .google-play {
-  background-color: #3ddc84;
+  background-color: #319e62;
+  height: 75px;
+  font-size: 25px;
 }
+
 .google-play:hover {
-  background-color: #26ee80;
+  background-color: #26ee85;
 }
 
 .app-store {
   background-color: #5f5e5e;
+  height: 70px;
+  font-size: 25px;
+  box-shadow: rgba(156, 156, 156, 0.4) 0 2px 4px,rgba(49, 49, 49, 0.3) 0 7px 13px -3px,rgba(98, 98, 99, 0.5) 0 -3px 0 inset;
 }
+
 .app-store:hover {
   background-color: #3a3a3a;
 }
@@ -91,6 +101,7 @@
 .instagram {
   background-color: #E1306C;
 }
+
 .instagram:hover {
   background-color: #ff3075;
 }
@@ -98,12 +109,15 @@
 .tiktok {
   background-color: #080808;
 }
+
 .tiktok:hover {
   background-color: #030303;
 }
+
 .youtube {
   background-color: #d31212;
 }
+
 .youtube:hover {
   background-color: #ff0000;
 }
@@ -111,6 +125,7 @@
 .facebook {
   background-color: #3b5998;
 }
+
 .facebook:hover {
   background-color: #0051ff;
 }
@@ -118,14 +133,17 @@
 /* Hover effects */
 .action-button:hover {
   opacity: 0.9;
-  box-shadow: #ff7b00 0px 4px 8px;
-  zoom: 1; transform: scale(1.1);
+  box-shadow: #444444 0px 2px 4px;
+  zoom: 1;
+  transform: scale(1.1);
   transition: all 0.1s ease;
-  
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(136, 136, 136, 0.3) 0 7px 13px -3px, #4e4e4e 0 -3px 0 inset;
+  transform: translateY(-2px);
+
 
   .store-logo {
-  transform: rotate(360deg);
-  transition: all 0.3s ease;
+    transform: rotate(360deg);
+    transition: all 0.3s ease;
   }
 }
 
@@ -136,7 +154,7 @@
     font-size: 16px;
     padding: 10px 15px;
   }
-  
+
   .store-logo {
     width: 20px;
     height: 20px;
@@ -153,3 +171,49 @@
     padding: 8px 12px;
   }
 }
+
+/* CSS */
+/* .button-29 {
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.button-29:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.button-29:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-29:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+} */
