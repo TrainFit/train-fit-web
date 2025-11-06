@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react';
+import { useEffect,  } from 'react';
+import { Link } from 'react-router-dom';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import google from '../assets/images/googleplay-svg.svg';
 import apple from '../assets/images/apple-svg.svg';
@@ -163,7 +164,7 @@ const MorePage = () => {
         </Row>
 
         {/* Call to Action */}
-        <Row className="mt-5">
+        {/* <Row className="mt-5">
           <Col lg={12}>
             <div className="cta-section text-center" data-aos="fade-up">
               <h2 className="cta-title">¿Listo para transformar tu cuerpo?</h2>
@@ -179,16 +180,16 @@ const MorePage = () => {
                 >
                   <span className="cta-button-text">Descargar App</span>
                 </a>
-                <a
-                  href="/calculadoras"
+                <Link
+                  to="/calculadoras"
                   className="cta-button cta-button-secondary"
                 >
                   <span className="cta-button-text">Usar Calculadoras</span>
-                </a>
-              </div>
+                </Link>
+              </div> 
             </div>
           </Col>
-        </Row>
+        </Row>*/}
       </Container>
     </div>
   );

@@ -50,7 +50,7 @@ const ContactForm = () => {
         suggestions: `${sanitizeInput(formData.name)}, ${sanitizeInput(formData.message)}`,
       };
 
-      const response = await fetch('https://app.trainfit.net/api/users/suggestions', {
+      const response = await fetch('', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -80,7 +80,7 @@ const ContactForm = () => {
       {/* <p>¿Tienes alguna pregunta o comentario? Nos encantaría saber de ti. Por favor, completa el formulario a continuación y nos pondremos en contacto contigo lo antes posible.</p> */}
       <h1 data-aos="fade-up">Contáctanos</h1>
         <p data-aos="fade-up">
-          Si tienes alguna pregunta, sugerencia o simplemente quieres decir hola, no dudes en ponerte en contacto con nosotros en <a className="text-light" id="style-1" href="mailto:trainfit.suggestions@gmail.com">trainfit.suggestions@gmail.com</a> o síguenos en nuestras redes sociales en:
+          Si tienes alguna pregunta, sugerencia o simplemente quieres decir hola, no dudes en ponerte en contacto con nosotros en <a className="text-light" id="style-1" href="mailto:suggestions@trainfit.net">suggestions@trainfit.net</a> o síguenos en nuestras redes sociales en:
         </p>
         <div className="d-flex justify-content-center gap-3 mb-3">
           <a href="https://www.facebook.com/AppTrainFit" title="face"><i className="bx bxl-facebook "></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" className="bi bi-facebook" viewBox="0 0 16 16">

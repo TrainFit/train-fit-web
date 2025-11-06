@@ -1,9 +1,11 @@
-import React from 'react';
+
 import './InfiniteCards.css';
 import Dieta from "../../assets/images/MockUpDietaPrincipal.png";
 import Buscar from "../../assets/images/MockUpBuscarCrear.png";
 import Perfil from "../../assets/images/MockUpPerfil.png";
 import Ejercicio from "../../assets/images/MockUpEjercicio.png";
+import Objetivos from "../../assets/images/MockUpObjetivosNutri.png";
+import SelecEjercicio from "../../assets/images/MockUpSeleccionarEjer.png";
 /* import Serie from "../../assets/images/MockUpSerie.png"; */
 
 const images = [
@@ -11,6 +13,8 @@ const images = [
   { src: Buscar, alt: "TrainFit - Pantalla de búsqueda y creación de ejercicios" },
   { src: Perfil, alt: "TrainFit - Pantalla de perfil de usuario y estadísticas" },
   { src: Ejercicio, alt: "TrainFit - Pantalla de ejercicios y rutinas de entrenamiento" },
+  { src: Objetivos, alt: "TrainFit - Pantalla de objetivos nutricionales nutricional" },
+  { src: SelecEjercicio, alt: "TrainFit - Pantalla de selección de ejercicios" },
 ]
 
 

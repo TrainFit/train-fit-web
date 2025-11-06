@@ -158,7 +158,7 @@ const Footer = () => {
                 {status && <p className="status">{status}</p>}
             </form>
           </div>
-          <p className='ms-2 text-light d-flex justify-content-center'>© 2024 TrainFit, Inc. All rights reserved.</p>
+                    <p className='ms-2 text-light d-flex justify-content-center'>© {new Date().getFullYear()} TrainFit, Inc. All rights reserved.</p>
         </div>
         {/*  <div className="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
           <p className='ms-2 text-light'>© 2024 Company, Inc. All rights reserved.</p>

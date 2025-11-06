@@ -1,6 +1,6 @@
-import React from 'react'
+
 import Perfil from "../../assets/images//MockUpPerfil.png";
-import Tablas from "../../assets/images/MockUpTablasPre.png";
+import Tablas from "../../assets/images/MockUpBuscarCrear.png";
 import Dieta from "../../assets/images/MockUpDietaPrincipal.png";
 import { Carousel, Image } from 'react-bootstrap';
 
