@@ -1,4 +1,3 @@
-
 import './HeroSection.scss';
 import Logo from '../../assets/images/MockUpHeader.png';
 import apple from '../../assets/images/getApple.png';

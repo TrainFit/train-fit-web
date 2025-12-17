@@ -8,15 +8,5 @@ Sitemap: https://www.trainfit.net/sitemap.xml
 # Disallow: /admin/
 # Disallow: /private/
 
-# Allow important pages
-Allow: /
-Allow: /SobreNosotros
-Allow: /calculadoras
-Allow: /more
-Allow: /FAQs
-Allow: /contacto
-Allow: /terminosycondiciones
-Allow: /politicas
-
 # Crawl-delay (optional, in seconds)
 Crawl-delay: 1
