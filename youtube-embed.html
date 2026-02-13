@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Video Player</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        background: #000;
+        overflow: hidden;
+      }
+
+      .video-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+
+      .error-message {
+        color: #fff;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          sans-serif;
+        text-align: center;
+        padding: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="video-container" id="container">
+      <!-- YouTube iframe will be injected here -->
+    </div>
+
+    <script>
+      (function () {
+        const container = document.getElementById("container");
+        const urlParams = new URLSearchParams(window.location.search);
+        const videoId = urlParams.get("v") || urlParams.get("id");
+
+        if (!videoId) {
+          container.innerHTML =
+            '<p class="error-message">No video ID provided</p>';
+          return;
+        }
+
+        // Validate video ID format (alphanumeric, dashes, underscores, 11 chars)
+        const validVideoId = /^[a-zA-Z0-9_-]{11}$/.test(videoId);
+        if (!validVideoId) {
+          container.innerHTML = '<p class="error-message">Invalid video ID</p>';
+          return;
+        }
+
+        // Build YouTube embed URL with optimal parameters
+        const embedUrl = new URL(`https://www.youtube.com/embed/${videoId}`);
+        embedUrl.searchParams.set("playsinline", "1");
+        embedUrl.searchParams.set("rel", "0");
+        embedUrl.searchParams.set("modestbranding", "1");
+        embedUrl.searchParams.set("fs", "1");
+        embedUrl.searchParams.set("controls", "1");
+        embedUrl.searchParams.set("enablejsapi", "1");
+        // Set origin to avoid YouTube error 153 when enablejsapi is used
+        embedUrl.searchParams.set("origin", window.location.origin);
+
+        // Optional: autoplay parameter
+        const autoplay = urlParams.get("autoplay");
+        if (autoplay === "1") {
+          embedUrl.searchParams.set("autoplay", "1");
+          embedUrl.searchParams.set("mute", "1"); // Required for autoplay
+        }
+
+        // Create and inject iframe
+        const iframe = document.createElement("iframe");
+        iframe.src = embedUrl.toString();
+        iframe.title = "YouTube Video Player";
+        iframe.setAttribute(
+          "allow",
+          "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        );
+        iframe.setAttribute("allowfullscreen", "");
+        iframe.setAttribute("playsinline", "");
+        iframe.referrerPolicy = "strict-origin-when-cross-origin";
+
+        container.appendChild(iframe);
+      })();
+    </script>
+  </body>
+</html>
